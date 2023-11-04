@@ -101,7 +101,10 @@ String s = new String("asdf");
 | double  | 8   | IEEE754         | IEEE754                  | Double    |
 
 所有数值都有正负号，所以不要去寻找无符号的数值类型\
-boolean类型所占存储空间的大小没有明确的指定，只能取字面值true或false
+boolean类型所占存储空间的大小没有明确的指定，只能取字面值true或false\
+高精度计算的类：BigInteger、BigDecimal\
+BigInteger支持任意精度的整数\
+BigDecimal支持任意精度的定点数，不会丢失任何精度，可以用它进行精确的货币计算
 
 
 
