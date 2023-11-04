@@ -59,19 +59,25 @@ JRE(Java runtime environment)：Java开发工具包（jre+开发工具） \
 
 ##### 6.1、关于声明
 ```java
-String s;
+public class Hu{
+    String s;   
+}
 ```
 在这里标识符实际上是对象的一个引用，可以将该情形想象为遥控车，遥控器类似于引用，遥控汽车相当于实际的操作对象。所以在这里我们实际创建的只是一个引用，而不是一个对象。此时s并未与任何事物相关联，因此在编码中，安全的做法是：创建一个引用的同时就进行初始化。
 
 ```java
-String s = "asdf";
+public class Hu {
+    String s = "asdf";
+}
 ```
 这里用到了一个Java语言的特性：字符串可以用带引号的文本进行初始化。
 ##### 6.2、关于对象初始化和存储
 
 一旦在系统中创建了引用，我们一定希望它与一个对象进行关联。通常我们使用**new**关键字操作符来实现初始化这一操作。例如：
 ```java
-String s = new String("asdf");
+public class Hu {
+    String s = new String("asdf");
+}
 ```
 
 ###### 6.2.1、寄存器
@@ -105,7 +111,7 @@ boolean类型所占存储空间的大小没有明确的指定，只能取字面�
 高精度计算的类：BigInteger、BigDecimal\
 BigInteger支持任意精度的整数\
 BigDecimal支持任意精度的定点数，不会丢失任何精度，可以用它进行精确的货币计算
-
+test
 
 
 
