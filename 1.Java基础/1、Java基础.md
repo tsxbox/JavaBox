@@ -89,6 +89,20 @@ String s = new String("asdf");
 ##### 6.3、特例：基本数据类型
 程序设计中经常会使用到一系列类型，new将对象存储在堆中，但是new创建一个很小的对象，往往不是最有效的，因此对于这些类型Java将这些变量直接存储到堆栈中，会更为高效。
 
+| 基本类型    | 字节数 | 最小值             | 最大值                      | 包装器类型     |
+|:--------|-----|-----------------|--------------------------|-----------|
+| boolean | -   | -               | -                        | Boolean   |
+| char    | 2   | unicode 0       | unicode 2<sup>16</sup>-1 | Character |
+| byte    | 1   | -128            | +127                     | Byte      |
+| short   | 2   | -2<sup>15</sup> | +2<sup>15</sup>-1        | Short     |
+| int     | 4   | -2<sup>31</sup> | +2<sup>31</sup>-1        | Integer   |
+| long    | 8   | -2<sup>63</sup> | +2<sup>63</sup>-1        | Long      |
+| float   | 4   | IEEE754         | IEEE754                  | Float     |
+| double  | 8   | IEEE754         | IEEE754                  | Double    |
+
+所有数值都有正负号，所以不要去寻找无符号的数值类型\
+boolean类型所占存储空间的大小没有明确的指定，只能取字面值true或false
+
 
 
 
