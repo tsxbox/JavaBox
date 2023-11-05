@@ -59,7 +59,7 @@ JRE(Java runtime environment)：Java开发工具包（jre+开发工具） \
 
 #### 6.1 关于声明
 ```java
-public class Hu{
+public class Hu {
     String s;   
 }
 ```
